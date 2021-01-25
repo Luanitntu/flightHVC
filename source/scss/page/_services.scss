@@ -1,0 +1,127 @@
+#page-services {
+    margin-top: 90px;
+    margin-bottom: 150px;
+    .section_1 {
+        .list__tab {
+            padding-left: 480px;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    width: 50%;
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 22px;
+                        font-family: "Roboto Bold";
+                        color: #696969;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        line-height: 1.382;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: all ease-in-out 0.3s;
+                        &:hover {
+                            color: #f6851f;
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_2 {
+        margin-top: 120px;
+        .wrap__services {
+            max-width: 1230px;
+            margin: 0 auto;
+            .services__post {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 115px;
+                .services__post--left {
+                    display: flex;
+                    width: (446px/1230px)*100%;
+                    .post__left--stt {
+                        p {
+                            font-size: 70px;
+                            font-family: "Aku Kamu";
+                            color: #f6851f;
+                            text-transform: uppercase;
+                            line-height: 1.2;
+                            margin-top: 20px;
+                            margin-bottom: 0;
+                            margin-right: 15px;
+                            background: #ffffff;
+                            padding: 5px 0;
+                        }
+                    }
+                    .post__left--img {
+                        display: inline-block;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            width: 98%;
+                            height: 115%;
+                            top: -7%;
+                            left: -10%;
+                            border: 4px solid #f6851f;
+                            position: absolute;
+                            z-index: -1;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .serivces__post--right {
+                    width: (783px/1230px)*100%;
+                    .post__right--content {
+                        padding-left: 78px;
+                        h4 {
+                            font-size: 36px;
+                            font-family: "Roboto Bold";
+                            color: #228acc;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            line-height: 1;
+                            margin-bottom: 35px;
+                            span {
+                                display: none;
+                            }
+                        }
+                        h5 {
+                            font-size: 18px;
+                            font-family: "Roboto Bold";
+                            color: #252525;
+                            font-weight: bold;
+                            line-height: 2.333;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            font-size: 18px;
+                            font-family: "Roboto Light";
+                            color: #252525;
+                            line-height: 1.5;
+                            margin-bottom: 10px;
+                        }
+                        ul {
+                            padding-left: 22px;
+                            li {
+                                font-size: 18px;
+                                font-family: "Roboto Light";
+                                color: #252525;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
