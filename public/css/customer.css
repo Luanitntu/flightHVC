@@ -35,14 +35,14 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #ca1f27;
+    background: #f6851f;
 }
 
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(202, 31, 39, 0.7);
+    background: rgb(236, 133, 31, 0.7);
 }
 
 

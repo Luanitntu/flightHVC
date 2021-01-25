@@ -944,6 +944,114 @@
     transition: all ease-in-out 0.3s;
 }
 
+#page-contact {
+    margin: 100px 0;
+}
+
+#page-contact .wrap__form {
+    padding: 0 70px;
+}
+
+#page-contact .wrap__form .form__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-contact .wrap__form .form__content .form__left,
+      #page-contact .wrap__form .form__content .form__right {
+    width: 48%;
+}
+
+#page-contact .wrap__form .form__content .form--input {
+    margin-bottom: 10px;
+}
+
+#page-contact .wrap__form .form__content .form--input input[type="text"],
+        #page-contact .wrap__form .form__content .form--input input[type="tel"],
+        #page-contact .wrap__form .form__content .form--input input[type="email"],
+        #page-contact .wrap__form .form__content .form--input textarea,
+        #page-contact .wrap__form .form__content .form--input select {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Roboto Light";
+    color: #838383;
+    line-height: 3;
+    padding-left: 15px;
+    min-height: 58px;
+}
+
+#page-contact .wrap__form .form__content .form--input textarea {
+    height: 105px;
+}
+
+#page-contact .wrap__form .form__content .form--input select {
+    min-height: 58px;
+}
+
+#page-contact .wrap__form .form__content .form--input input::placeholder,
+        #page-contact .wrap__form .form__content .form--input textarea::placeholder {
+    font-size: 18px;
+    font-family: "Roboto Light";
+    color: #838383;
+    line-height: 3;
+    opacity: 1;
+}
+
+#page-contact .wrap__form .form__btn {
+    display: flex;
+    justify-content: center;
+}
+
+#page-contact .wrap__form .form__btn .btn_submit {
+    background: #252525;
+    padding: 15px 88px 15px 35px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-contact .wrap__form .form__btn .btn_submit:before {
+    content: '';
+    border-bottom: 70px solid #f6851f;
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 75px;
+    top: -4%;
+    right: -10px;
+    position: absolute;
+}
+
+#page-contact .wrap__form .form__btn .btn_submit:after {
+    content: '';
+    width: 20px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    background: url(../images/next-services.png) no-repeat;
+    position: absolute;
+}
+
+#page-contact .wrap__form .form__btn .btn_submit input[type="submit"] {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    font-size: 19px;
+    font-family: "Roboto Bold";
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.632;
+}
+
 #footer .wrap_footer {
     display: flex;
     justify-content: space-between;

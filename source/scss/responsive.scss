@@ -160,6 +160,9 @@
     #page-home .section_3 .services .services__wrap .service--item .services__title {
         margin-bottom: 17px;
     }
+    #page-contact .wrap__form {
+        padding: 0;
+    }
     #footer .wrap_footer .footer__info .footer__info--address {
         padding: 0 20px;
     }
@@ -251,6 +254,9 @@
     #header-page .banner-page .text-banner {
         left: 24%;
     }
+    #header-page .banner-page .img-banner:before {
+        left: 3.5%;
+    }
     /*============== Page Services =============*/
     #header-page .banner-page .img-banner.services:before {
         height: 100%;
@@ -280,6 +286,9 @@
 }
 
 @media only screen and (max-width: 1100px) {
+    #header-page .banner-page .img-banner:before {
+        display: none;
+    }
     #header-page .banner-page .text-banner {
         left: 31%;
     }
@@ -629,7 +638,15 @@
     }
 }
 
-@media only screen and (max-width:767px) {}
+@media only screen and (max-width:767px) {
+    #page-contact .wrap__form .form__content {
+        flex-wrap: wrap;
+    }
+    #page-contact .wrap__form .form__content .form__left,
+    #page-contact .wrap__form .form__content .form__right {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     #header-page .banner-page {
@@ -775,6 +792,9 @@
         order: 2;
     }
     /*================ Page Gallery =====================*/
+    #page-gallery {
+        margin: 70px 0 0;
+    }
     #page-gallery .section_1 .wrap__gallery .gallery__item .items {
         width: 100%;
         text-align: center;
@@ -787,8 +807,12 @@
     #page-gallery .section_1 .wrap__gallery .gallery__item .items.margin-top-right {
         margin-top: 0;
     }
-    #page-gallery {
-        margin: 70px 0 0;
+    /*================ Page Contact =====================*/
+    #page-contact {
+        margin: 60px 0;
+    }
+    #page-contact .wrap__form .form__btn .btn_submit {
+        margin: 20px;
     }
     #footer .wrap_footer {
         margin-top: 30px;
@@ -871,6 +895,23 @@
     #page-gallery .section_1 .wrap__gallery .gallery__item .items {
         margin-bottom: 15px;
     }
+    /*=================COntact=============*/
+    #page-contact .wrap__form .form__content .form--input input[type="text"],
+    #page-contact .wrap__form .form__content .form--input input[type="tel"],
+    #page-contact .wrap__form .form__content .form--input input[type="email"],
+    #page-contact .wrap__form .form__content .form--input textarea,
+    #page-contact .wrap__form .form__content .form--input select {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    #page-contact .wrap__form .form__content .form--input input::placeholder,
+    #page-contact .wrap__form .form__content .form--input textarea::placeholder {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    #page-contact .wrap__form .form__content .form--input textarea {
+        height: 130px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -892,5 +933,8 @@
     #page-home .section_2 .welcome .welcome__wrap .welcome__content .content__title h4 {
         font-size: 25px;
         padding: 0 20px;
+    }
+    #page-home .section_3:after {
+        font-size: 80px;
     }
 }
